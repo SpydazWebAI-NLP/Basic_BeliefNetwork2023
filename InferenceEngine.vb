@@ -13,7 +13,6 @@ Public Class Node
         Parents = New List(Of Node)()
     End Sub
 End Class
-
 Public Class ConditionalProbabilityTable
     Public Property Node As Node
     Public Property Values As Dictionary(Of List(Of String), Double)
@@ -95,7 +94,6 @@ Public Class InferenceEngine
         End While
     End Function
 End Class
-
 Public Class BeliefNetwork
     Public Property Nodes As List(Of Node)
     Public Sub LoadTrainingData(trainingData As Dictionary(Of String, Dictionary(Of List(Of String), Double)))
